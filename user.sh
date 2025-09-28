@@ -1,8 +1,8 @@
 #!/bin/bash
 
-app_name="cart"
-source ./common.sh
+app_name="user"
 
+source ./common.sh
 CHECK_ROOT
 
 CREATE_USER
