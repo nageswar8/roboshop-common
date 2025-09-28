@@ -13,12 +13,11 @@ do
     USER_DATA_FILE=$(mktemp)
     cat > "$USER_DATA_FILE" <<EOF
 #!/bin/bash
-yum install -y git
 cd /home/ec2-user
 git clone https://github.com/nageswar8/roboshop-common.git
 cd roboshop-common
-chmod +x $i.sh
-bash $i.sh > /var/log/$i.log 2>&1
+sudo chmod +x $i.sh
+sudo bash $i.sh > /var/log/$i.log 2>&1
 EOF
 
     INSTANCE_ID=$(aws ec2 run-instances \
