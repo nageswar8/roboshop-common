@@ -8,7 +8,7 @@ Y="\e[33m"
 N="\e[0m"
 
 LOGS_FOLDER="/var/log/shell-script"
-MONGO_HOST="mongo.idiap.shop"
+MONGO_HOST="mongodb.idiap.shop"
 CUR_DIR=$PWD
 
 DB_HOST="mysql.idiap.shop"
